@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>浮动</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{
+            margin: 0;
+        }
+
+        .header{
+            text-align: center;
+            color: white;
+            background-color: #2196F3;
+            padding: 15px;
+        }
+
+        .footer{
+            text-align: center;
+            color: white;
+            background: #444;
+            padding: 15px;
+        }
+
+        .topmenu{
+            background-color: #777;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .topmenu li{
+            float: left;
+
+        }
+
+        .topmenu li a{
+            display: inline-block;
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .topmenu li a:hover{
+            background: black;
+        }
+
+        .topmenu li a.active{
+            background: #4CAF50;
+            color: white;
+        }
+
+        .sidemenu{
+            width: 25%;
+        }
+
+        .content{
+            width: 75%;
+        }
+
+        .column{
+            float: left;
+            padding: 15px;
+        }
+
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .sidemenu ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidemenu li a{
+            display: block;
+            text-decoration: none;
+            color: #666;
+            background-color: #eee; 
+            margin-bottom: 4px;
+            padding: 8px;
+        }
+
+        .sidemenu li a:hover{
+            background-color: #555; 
+            color: white;
+        }
+
+        .sidemenu li a.active{
+            background-color: #008cBA;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="topmenu">
+        <li><a href="#" class="active">首页</a></li>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">关于我们</a></li>
+
+    </ul>
+
+    <div class="clearfix">
+        <div class="column sidemenu">
+            <ul>
+                <li><a href="#">HTML / CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#" class="active">服务端</a></li>
+                <li><a href="#">数据库</a></li>
+                <li><a href="#">移动端</a></li>
+                <li><a href="#">XML 教程</a></li>
+                <li><a href="#">ASP.NET</a></li>
+                <li><a href="#">Web Service</a></li>
+                <li><a href="#">开发工具</a></li>
+                <li><a href="#">网站建设</a></li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <div class="header">
+                <h1>Python 3 教程</h1>
+            </div>  
+
+            <p>
+                Python的3.0版本，常被称为Python 3000，或简称Py3k。相对于Python的早期版本，这是一个较大的升级。为了不带入过多的累赘，Python 3.0在设计的时候没有考虑向下兼容。
+            </p>
+            <p>
+                本教程主要针对Python 3.x版本的学习，如果你使用的是Python 2.x版本请移步至Python 2.X版本的教程。
+            </p>
+
+            <p>
+                Python的3.0版本，常被称为Python 3000，或简称Py3k。相对于Python的早期版本，这是一个较大的升级。为了不带入过多的累赘，Python 3.0在设计的时候没有考虑向下兼容。
+            </p>
+            <p>
+                本教程主要针对Python 3.x版本的学习，如果你使用的是Python 2.x版本请移步至Python 2.X版本的教程。
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>底部内容</p>
+    </div>
+</body>
+</html>
